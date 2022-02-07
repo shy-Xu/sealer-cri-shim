@@ -52,7 +52,6 @@ func (s *server) PullImage(ctx context.Context,
 	if domain == "" {
 		req.Image.Image = sealerHub + "/" + req.Image.Image
 	}
-	fmt.Println(req.Image.Image)
 	rsp, err := (*s.imageService).PullImage(ctx, req)
 
 	if err != nil {
