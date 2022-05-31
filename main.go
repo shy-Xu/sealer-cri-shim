@@ -3,12 +3,14 @@ package main
 import (
 	"cri-proxy/shim"
 	"fmt"
-	"k8s.io/klog/v2"
 	"os"
 	"os/signal"
 	"syscall"
+
+	"k8s.io/klog/v2"
 )
 
+// test 1
 func main() {
 	options := shim.Options{
 		ShimSocket:  "/var/run/cri-resmgr/cri-resmgr.sock",
