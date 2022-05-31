@@ -10,8 +10,6 @@ import (
 	"k8s.io/klog/v2"
 )
 
-// test 1
-
 func main() {
 	options := shim.Options{
 		ShimSocket:  "/var/run/cri-resmgr/cri-resmgr.sock",
