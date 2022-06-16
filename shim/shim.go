@@ -18,9 +18,10 @@ import (
 	"cri-proxy/server"
 	"cri-proxy/shim/client"
 	"fmt"
-	"k8s.io/klog/v2"
 	"os"
 	"sync"
+
+	"k8s.io/klog/v2"
 )
 
 const (
@@ -50,6 +51,7 @@ type Shim interface {
 	Server() server.Server
 }
 
+//just for test
 // shim is the implementation of Shim.
 type shim struct {
 	sync.Mutex               // hmm... do *we* need to be lockable, or the upper layer(s) ?
